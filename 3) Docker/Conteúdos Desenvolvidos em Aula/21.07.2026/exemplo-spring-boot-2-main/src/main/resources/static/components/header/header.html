@@ -1,0 +1,38 @@
+<header>
+    <div>
+        <nav>
+            <ul>
+                <li><a href="cadastro-funcionario.html">Cadastrar Funcionário</a></li>
+                <li><a href="lista-funcionarios.html">Listar Funcionários</a></li>
+                <li><a href="cadastro-departamento.html">Cadastrar Departamento</a></li>
+                <li><a href="lista-departamentos.html">Listar Departamentos</a></li>
+            </ul>
+        </nav>
+
+        <div style="display: flex; align-items: center;  margin-left: auto;
+    margin-right: 40px;">
+
+
+            <form style="margin-right: 50px;" id="formulario-pesquisa">
+                <input style="margin-right: 10px; width: 250px;" type="text"
+                    placeholder="Pesquise por nome, email ou cpf" id="input-pesquisa">
+                <button class="btn btn-primary" id="botao-pesquisa">Pesquise</button>
+            </form>
+
+
+            <div id="boas-vindas" class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Olá,<span id="nome-usuario"></span>
+                </button>
+
+                <ul class="dropdown-menu">
+                    <li>
+                        <form action="/logout" method="post"><button class="dropdown-item">Logout</button></form>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</header>
